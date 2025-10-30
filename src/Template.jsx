@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Music, Youtube, Instagram, Facebook, Twitter, Mail, Play } from 'lucide-react';
+import { TikTokIcon } from './component/TikTokIcon';
 
 const SpotifyIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
@@ -35,11 +36,13 @@ export default function SingerPortfolio() {
   ];
 
   const socialLinks = [
-    { icon: Youtube, label: 'YouTube', url: 'https://youtube.com', color: 'hover:text-red-500' },
+    { icon: Youtube, label: 'YouTube', url: 'https://youtube.com/@BibekPangeniOfficial', color: 'hover:text-red-500' },
     { icon: SpotifyIcon, label: 'Spotify', url: 'https://spotify.com', color: 'hover:text-green-500' },
-    { icon: Instagram, label: 'Instagram', url: 'https://instagram.com', color: 'hover:text-pink-500' },
-    { icon: Facebook, label: 'Facebook', url: 'https://facebook.com', color: 'hover:text-blue-500' },
-    { icon: Twitter, label: 'Twitter', url: 'https://twitter.com', color: 'hover:text-sky-400' }
+    { icon: Instagram, label: 'Instagram', url: 'https://instagram.com/bibekpangeniofficial  ', color: 'hover:text-pink-500' },
+    { icon: Facebook, label: 'Facebook', url: 'https://facebook.com/BibekPangeniOfficial ', color: 'hover:text-blue-500' },
+    // { icon: Twitter, label: 'Twitter', url: 'https://twitter.com', color: 'hover:text-sky-400' }
+    { icon: TikTokIcon, label: 'TikTok', url: 'https://tiktok.com/@bibekpangeniofficial', color: 'hover:text-pink-500' }
+
   ];
 
   return (
@@ -49,7 +52,7 @@ export default function SingerPortfolio() {
         <nav className="w-full flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Music className="w-8 h-8 text-purple-400" />
-            <span className="text-2xl font-bold">Sarah Melody</span>
+            <span className="text-2xl font-bold">Bibek Pangeni</span>
           </div>
           <div className="hidden md:flex space-x-6">
             <a href="#home" className="hover:text-purple-400 transition">Home</a>
@@ -63,19 +66,28 @@ export default function SingerPortfolio() {
       {/* Hero Section */}
       <section id="home" className="w-full px-6 py-20 text-center">
         <div className="w-full max-w-6xl mx-auto">
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-2xl">
-            <Music className="w-24 h-24 text-white" />
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
-            Sarah Melody
-          </h1>
+        <div className="relative w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 p-[4px] shadow-2xl">
+    <img
+      src="./bibek.png"
+      alt="Bibek Pangeni"
+      className="w-full h-full object-cover rounded-full border-4 border-gray-900"
+    />
+  </div>
+<h1 className="text-4xl md:text-7xl font-bold mb-3 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
+  Bibek Pangeni
+</h1>
+
+
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
             Singer • Songwriter • Performer
           </p>
-          <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
             Bringing soulful melodies and heartfelt lyrics to stages around the world. 
             Experience music that touches the heart and moves the soul.
           </p>
+
+         <p className='font-bold mb-8'>Connecting Souls By Music</p>
+
           
           {/* Social Media Links */}
           <div className="flex justify-center space-x-6 mb-8">
@@ -147,7 +159,7 @@ export default function SingerPortfolio() {
 
           <div className="text-center mt-8">
             <a
-              href="https://youtube.com"
+              href="https://youtube.com/@BibekPangeniOfficial"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
@@ -165,14 +177,10 @@ export default function SingerPortfolio() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-8">About Me</h2>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              With over a decade of experience in the music industry, I've had the privilege of 
-              performing at venues across the globe and collaborating with incredible artists. 
-              My music blends contemporary pop with soulful melodies, creating a unique sound 
-              that resonates with audiences of all ages.
+          Namaste! I’m Bibek Pangeni, a singer and student of classical music from Nepal, deeply devoted to a lifelong journey of melody and emotion. Since childhood, music has been my closest companion, guiding me through every moment, teaching me devotion, and helping me express what words often cannot. Each performance I create is a reflection of my soul, blending emotion, discipline, and creativity to bring melodies that touch the heart. Music, for me, is not just sound, it’s a form of prayer, a way of living with feeling and purpose.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not in the studio or on stage, I love connecting with fans through 
-              social media and sharing behind-the-scenes glimpses of my musical journey.
+            Through my music, I wish to share peace, love, and faith with everyone who listens. My dream is to create timeless songs that stay alive in your hearts, carrying warmth and inspiration for generations to come.
             </p>
           </div>
         </div>
@@ -186,7 +194,7 @@ export default function SingerPortfolio() {
             Interested in booking or collaboration? Let's create something amazing together!
           </p>
           <a
-            href="mailto:contact@sarahmelody.com"
+            href="mailto:info.bibekpangeni@gmail.com"
             className="inline-flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
           >
             <Mail className="w-6 h-6" />
@@ -198,9 +206,9 @@ export default function SingerPortfolio() {
       {/* Footer */}
       <footer className="w-full px-4 lg:px-8 py-8 border-t border-gray-800">
         <div className="max-w-7xl mx-auto text-center text-gray-400">
-          <p>&copy; 2025 Sarah Melody. All rights reserved.</p>
+          <p>&copy; 2026 Bibek Pangeni. All rights reserved.</p>
           <div className="flex justify-center space-x-4 mt-4">
-            {socialLinks.map((social, idx) => (
+            {/* {socialLinks.map((social, idx) => (
               <a
                 key={idx}
                 href={social.url}
@@ -210,7 +218,7 @@ export default function SingerPortfolio() {
               >
                 <social.icon className="w-5 h-5" />
               </a>
-            ))}
+            ))} */}
           </div>
         </div>
       </footer>
