@@ -68,7 +68,7 @@ export default function SingerPortfolio() {
         <div className="w-full max-w-6xl mx-auto">
         <div className="relative w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 p-[4px] shadow-2xl">
     <img
-      src="./bibek.png"
+      src="./bibek.webp"
       alt="Bibek Pangeni"
       className="w-full h-full object-cover rounded-full border-4 border-gray-900"
     />
